@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage("build") {
       steps {
-        bat "docker build -t OlaUnicamp ."
+        bat "docker build -t ola_unicamp ."
       }
     }
     stage("run") {
       steps {
-        bat "docker run --rm OlaUnicamp"
+        bat "docker run --rm ola_unicamp"
       }
     }
   }
