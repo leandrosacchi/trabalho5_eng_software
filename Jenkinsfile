@@ -8,7 +8,7 @@ pipeline {
     }
     stage("run") {
       steps {
-        bat "docker run --rm ola_unicamp"
+        bat "docker run --rm -e LANG=C.UTF-8 ola_unicamp"
       }
     }
   }
